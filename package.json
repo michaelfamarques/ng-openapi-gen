@@ -15,7 +15,7 @@
   },
   "private": true,
   "bin": {
-    "ng-openapi-gen": "lib/index.js"
+    "ng-openapi-gen": "dist/lib/index.js"
   },
   "scripts": {
     "test": "jasmine-ts tsconfig.json --config=jasmine.json",

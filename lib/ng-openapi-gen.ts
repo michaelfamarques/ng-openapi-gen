@@ -148,6 +148,7 @@ export class NgOpenApiGen {
             console.warn(`Operation '${opPath}.${method}' didn't specify an 'operationId'. Assuming '${id}'.`);
           }
           if (this.operations.has(id)) {
+            methodSpec['x-operation-name'] = id;
             // Duplicated id. Add a suffix
             let suffix = 0;
             let newId = id;
